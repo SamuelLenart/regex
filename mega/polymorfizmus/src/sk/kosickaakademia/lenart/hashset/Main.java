@@ -3,20 +3,23 @@ package sk.kosickaakademia.lenart.hashset;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        /*Set<Integer> mnozina = new HashSet<>();
+        Set<Integer> mnozina = new HashSet<>();
         mnozina.add(45);
         mnozina.add(22);
         mnozina.add(45);
         mnozina.add(18);
         mnozina.add(45);
-        for(Integer temp : mnozina){
+
+        Object[] pole = mnozina.toArray();
+        Arrays.sort(pole);
+        for(Integer temp : mnozina)
+        {
             System.out.println(temp);
-        }*/
+        }
         printHowmanyNames();
     }
     public static void printHowmanyNames(){
